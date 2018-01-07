@@ -1,0 +1,10 @@
+.product {
+  border: 1px solid #eee;
+  text-align: center;
+  padding: 15px;
+}
+
+.product-image {
+  height: 180px;
+  padding: 10px;
+}
