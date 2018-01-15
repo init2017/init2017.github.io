@@ -1,22 +1,189 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <meta charset="UTF-8">
-  <title>Js-анимация</title>
-  <style type="text/css">
-    img {
-      float: right;
-      margin: 20vh 0 0 0;
-      width: 200px;
-      cursor: pointer;
-    }
+ <head>
+  <meta charset="utf-8">
+  <title>Популярные браузеры</title>
+  <style>
+  body {
+  	height: 100%;
+  	width: 100%;
+  }
+   h3 {
+    margin: 0; /* Отступы */
+    padding: 10px; /* Поля */
+    text-align: center; /* Выравнивание заголовка */
+   }
+   h4 {
+    margin-top: 0; /* Отступ сверху */
+   }
+   #sidebar { /* Левая колонка */
+    float: left; /* Обтекание справа */
+    height: 80%;
+    border: 1px solid #333; /* Рамка */
+    width: 25%; /* Ширина колонки */
+    padding: 5px; /* Поля вокруг текста */
+    margin: 10px 20px 20px 20px; /* Отступы */
+   }
+   #content { /* Правая колонка */
+    margin: 10px 5px 20px 30%; /* Отступы */
+    padding: 5px; /* Поля вокруг текста */
+    width: 50%;
+    height: 80%;
+    border: 1px solid #333; /* Рамка */
+   }
+   .list { /* Пункты левой колонки */
+   	margin: 5px 5px 5px 5px; /* Отступы */
+   	border: 1px solid #D4D4D4; /* Рамка */
+   	background-color: #ffdead; /* Цвет фона */
+   	cursor: pointer; /* Форма курсора */
+   }
+    .item { /* Пункты правой колонки */
+   	margin: 5px 5px 5px 5px; /* Отступы */
+   	border: 1px solid #D4D4D4; /* Рамка */
+   	background-color: #C5D0E6; /* Цвет фона */
+   	cursor: pointer; /* Форма курсора */
+   }
   </style>
-  <body>
-      <button id="first">Нажми меня</button>
-      <div>
-        <img id="second" src="./public/img/car.png" />
-      </div>
-    <script src="./public/js/jquery-3.2.1.min.js"></script>
-    <script src="./public/js/index.js"></script>
-  </body>
+ </head>
+ <body>
+  	<h3>Самые популярные браузеры в России (2017)</h3>
+  <div id="sidebar">
+  	<h4>Название</h4>
+	  	<div class="list Chrome">Chrome</div>
+	    <div class="list Yandex">Yandex Browser</div>
+	    <div class="list Safari">Safari</div>
+	    <div class="list Firefox">Firefox</div>
+	    <div class="list Opera">Opera</div>
+	    <div class="list IE">Internet Explorer</div>
+	    <div class="list Edge">Microsoft Edge</div>
+	    <div class="list Android">Android Browser</div>
+	    <div class="list WebKit">WebKit</div>
+	    <div class="list Other">Другие браузеры</div>
+  </div>
+	<div id="content">
+		<h4>Доля, %</h4>
+			<div class="item Chrome" style="width: 50.89%;">
+			50.89</div>
+			<div class="item Yandex" style="width: 15.70%;">
+			15.70</div>
+			<div class="item Safari" style="width: 12.21%;">
+			12.21</div>
+			<div class="item Firefox" style="width: 7.42%;">
+			7.42</div>
+			<div class="item Opera" style="width: 4.91%;">
+			4.91</div>
+			<div class="item IE" style="width: 3.08%;">
+			3.08</div>
+			<div class="item Edge" style="width: 1.64%;">
+			1.64</div>
+			<div class="item Android" style="width: 1.03%;">
+			1.03</div>
+			<div class="item WebKit" style="width: 0.68%;">
+			0.68</div>
+			<div class="item Other" style="width: 2.44%;">
+			2.44</div>
+	</div>
+  <script src="./public/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+  	$('.Chrome').hover(
+  		function () {
+  			$(this).css("background-color", "#FF1820");
+  			$('.Chrome').css("background-color", "#FF1820");
+  		}, // конец mouseover
+  		function () {
+  			$('.Chrome').css("background-color", "");
+  		} // конец mouseout
+  		); // конец hover
+
+  	$('.Yandex').hover(
+  		function () {
+  			$(this).css("background-color", "#FF1820");
+  			$('.Yandex').css("background-color", "#FF1820");
+  		}, // конец mouseover
+  		function () {
+  			$('.Yandex').css("background-color", "");
+  		} // конец mouseout
+  		); // конец hover
+
+  	$('.Safari').hover(
+  		function () {
+  			$(this).css("background-color", "#FF1820");
+  			$('.Safari').css("background-color", "#FF1820");
+  		}, // конец mouseover
+  		function () {
+  			$('.Safari').css("background-color", "");
+  		} // конец mouseout
+  		); // конец hover
+
+  	  	$('.Firefox').hover(
+  		function () {
+  			$(this).css("background-color", "#FF1820");
+  			$('.Firefox').css("background-color", "#FF1820");
+  		}, // конец mouseover
+  		function () {
+  			$('.Firefox').css("background-color", "");
+  		} // конец mouseout
+  		); // конец hover
+
+  	  	$('.Opera').hover(
+  		function () {
+  			$(this).css("background-color", "#FF1820");
+  			$('.Opera').css("background-color", "#FF1820");
+  		}, // конец mouseover
+  		function () {
+  			$('.Opera').css("background-color", "");
+  		} // конец mouseout
+  		); // конец hover
+
+  	  	$('.IE').hover(
+  		function () {
+  			$(this).css("background-color", "#FF1820");
+  			$('.IE').css("background-color", "#FF1820");
+  		}, // конец mouseover
+  		function () {
+  			$('.IE').css("background-color", "");
+  		} // конец mouseout
+  		); // конец hover
+
+  	  	$('.Edge').hover(
+  		function () {
+  			$(this).css("background-color", "#FF1820");
+  			$('.Edge').css("background-color", "#FF1820");
+  		}, // конец mouseover
+  		function () {
+  			$('.Edge').css("background-color", "");
+  		} // конец mouseout
+  		); // конец hover
+
+  	  	$('.Android').hover(
+  		function () {
+  			$(this).css("background-color", "#FF1820");
+  			$('.Android').css("background-color", "#FF1820");
+  		}, // конец mouseover
+  		function () {
+  			$('.Android').css("background-color", "");
+  		} // конец mouseout
+  		); // конец hover
+
+  	  	$('.WebKit').hover(
+  		function () {
+  			$(this).css("background-color", "#FF1820");
+  			$('.WebKit').css("background-color", "#FF1820");
+  		}, // конец mouseover
+  		function () {
+  			$('.WebKit').css("background-color", "");
+  		} // конец mouseout
+  		); // конец hover
+
+  		$('.Other').hover(
+  		function () {
+  			$(this).css("background-color", "#FF1820");
+  			$('.Other').css("background-color", "#FF1820");
+  		}, // конец mouseover
+  		function () {
+  			$('.Other').css("background-color", "");
+  		} // конец mouseout
+  		); // конец hover
+  </script>
+ </body>
 </html>
